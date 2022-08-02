@@ -176,3 +176,49 @@ module MyModule
 struct <make whatever changes you need>
 end
 ```
+
+
+***Scraping***
+
+Scraping in Julia can be done using HTTP, Gumbo and Cascadia
+
+Using HTTP, we extract the html data from the url
+
+```
+using HTTP
+url = "url of website you want to scrape"
+r = HTTP.get(url)
+```
+
+Then we use gumbo to parse the html and we use index to separate head and body of the html file, we need only the body as that has the data we want to scrape.
+
+```
+using Gumbo
+h = parsehtml(String(r.body))
+body = h.root[2]
+```
+
+In the real world websites, code is pretty cluttered and it is not very ideal to just use Gumbo for scraping, we use Cascadia to find specific css elements to get the data we need. In our case "wikitable sortable plainrowheaders" holds the table we need.
+
+```
+using Cascadia
+eachmatch(Selector("table"), body)
+s = eachmatch(Selector("name of class we want to extract"), body)
+```
+
+Then starts the part where we have to play around with the tables to get the extract pattern to extract the code, from the page source we can see that ```[1][2]``` is the table for test centuries, we can confirm that by testing it out too. So we define the table as ```table = s[1][2]```.
+
+Now we have to extract the pattern for the text part of the html, which will again vary column by column, because some of the columns have text hyperlinked, others will have just text, some will have text and \n, some will have images as well as text.
+
+![Indetifying pattern](static/identify_pattern.png)
+
+There is a possibility the pattern changes within a single column too, so have to take all that into consideration and use try catch blocks.
+
+![try catch block for columns where there are different patterns for different rows](static/try_catch.png)
+
+Finally after scraping all the columns, assemble the matrix and add it to csv files.
+
+![csv file](static/csv.png)
+
+
+![vs code extension to convert csv file to table](static/csv-to-table.png)

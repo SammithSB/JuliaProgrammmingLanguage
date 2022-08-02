@@ -1,0 +1,28 @@
+number,score,country,pos,inn,test,venue,home_away,date,result
+1, 116,Australia,6,2,4/4,Adelaide Oval,Away,24 January 2012,Lost
+2, 103,New Zealand,5,2,2/2,M. Chinnaswamy Stadium,Home,31 August 2012,Won
+3, 103,England,5,2,4/4,Vidarbha Cricket Association Stadium,Home,13 December 2012,Drawn
+4, 107,Australia,5,2,1/4,M. A. Chidambaram Stadium,Home,22 February 2013,Won
+5, 119,South Africa,4,1,1/2,Wanderers Stadium,Away,18 December 2013,Drawn
+6, 105*,New Zealand,4,4,2/2,Basin Reserve,Away,14 February 2014,Drawn
+7, 115,Australia,4,2,1/4,Adelaide Oval,Away,9 December 2014,Lost
+8, 141,Australia,4,4,1/4,Adelaide Oval,Away,9 December 2014,Lost
+9, 169,Australia,4,2,3/4,Melbourne Cricket Ground,Away,26 December 2014,Drawn
+10, 147,Australia,4,2,4/4,Sydney Cricket Ground,Away,6 January 2015,Drawn
+11, 103,Sri Lanka,4,2,1/3,Galle International Stadium,Away,12 August 2015,Lost
+12, 200,West Indies,4,1,1/4,Sir Vivian Richards Stadium,Away,21 July 2016,Won
+13, 211,New Zealand,4,1,3/3,Holkar Stadium,Home,8 October 2016,Won
+14, 167,England,4,1,2/5,ACA-VDCA Cricket Stadium,Home,17 November 2016,Won
+15, 235,England,4,2,4/5,Wankhede Stadium,Home,8 December 2016,Won
+16, 204,Bangladesh,4,1,1/1,Rajiv Gandhi International Cricket Stadium,Home,9 February 2017,Won
+17, 103*,Sri Lanka,4,3,1/3,Galle International Stadium,Away,26 July 2017,Won
+18, 104*,Sri Lanka,4,3,1/3,Eden Gardens,Home,16 November 2017,Drawn
+19, 213,Sri Lanka,4,2,2/3,Vidarbha Cricket Association Stadium,Home,24 November 2017,Won
+20, 243,Sri Lanka,4,1,3/3,Feroz Shah Kotla Ground,Home,2 December 2017,Drawn
+21, 153,South Africa,4,2,2/3,SuperSport Park,Away,13 January 2018,Lost
+22, 149,England,4,2,1/5,Edgbaston Cricket Ground,Away,1 August 2018,Lost
+23, 103,England,4,3,3/5,Trent Bridge,Away,18 August 2018,Won
+24, 139,West Indies,4,1,1/2,Saurashtra Cricket Association Stadium,Home,4 October 2018,Won
+25, 123,Australia,4,2,2/4,Perth Stadium,Away,14 December 2018,Lost
+26, 254*,South Africa,4,1,2/3,Maharashtra Cricket Association Stadium,Home,10 October 2019,Won
+27, 136,Bangladesh,4,2,2/2,Eden Gardens,Home,22 November 2019,Won
