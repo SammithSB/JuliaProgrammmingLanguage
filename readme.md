@@ -1,6 +1,6 @@
 These are basically the stuff I learnt while playing around with the language.
 
-***starting a repl***
+starting a repl
 
 _____________________
 
@@ -16,7 +16,7 @@ use "?" to go to help.
 we use the *using* keyword to import libraries in Julia. to run a line, we need ot press cmd+enter keys. It runs the program line by line.
 
 
-***packages***
+packages
 _____________________
 
 Basic commands are ```add <package-name>, rm <package-name>, status``` to know packages present. To add specific versions of packages, add ```@<version-number>``` after package name.
