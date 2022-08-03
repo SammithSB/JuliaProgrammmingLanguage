@@ -1,8 +1,7 @@
 These are basically the stuff I learnt while playing around with the language.
 
-starting a repl
+## ***starting a repl***
 
-_____________________
 
 cmd+shift+p - julia start repl
 
@@ -11,13 +10,13 @@ cmd+shift+p - julia start repl
 use "]" to play around with packages in julia and backspace to return to normal state. 
 use "?" to go to help.
 
-***Importing libraries in your files***
+## ***Importing libraries in your files***
 
 we use the *using* keyword to import libraries in Julia. to run a line, we need ot press cmd+enter keys. It runs the program line by line.
 
 
-packages
-_____________________
+## ***packages***
+
 
 Basic commands are ```add <package-name>, rm <package-name>, status``` to know packages present. To add specific versions of packages, add ```@<version-number>``` after package name.
 
@@ -27,7 +26,7 @@ upadting is just up or update <package-name>
 gc for garbage collection and gc --all to force delete stuff.
 
 
-***variables***
+## ***variables***
 
 Variables are similar to any other language, typeof() func to check type of a variable.
 
@@ -39,7 +38,7 @@ In Julia you can just use \pi and \euler to get values of pi and e.
 ![Pasted image](static/piANDe.png)
 
 
-***methodswith***
+## ***methodswith***
 
 Function signature  methodswith(typ[, module or function]; supertypes::Bool=false])
 It returns all the possible methods that require argument of given type.
@@ -59,13 +58,13 @@ We can even use LaTeX symbols for less than or equal to and other expressions.
 ```isa``` is one of the thigns we can use to check truth of the expression.
 
 
-***running part of the code***
+## ***running part of the code***
 
 If you just want to run a part of the code, just select part you want to run and you will get result of just that.
 
 ![pasted image](static/runPartOfCode.png)
 
-***Vectors, Matrices***
+## ***Vectors, Matrices***
  
 Vector type in Julia is ```Vector{typ}```
 
@@ -77,7 +76,7 @@ For matrix we define it as ```y = [1 2 3;4 5 6]```, we separate elements using s
 
 If we have multiple types of elements in our array then it will be of type ```{any}```
 
-***operations on vector***
+## ***operations on vector***
 If we want to append an element into a vector we use push command.
 
 ```push!(vec, <val>)```
@@ -86,7 +85,7 @@ In Julia if a Vector is of type ```Vector{Int64}``` and we try to push a Float, 
 ![Pasted image 20220724193630.png](static/vector.png)
 
 
-***if elseif else***
+## ***if elseif else***
 
 ```
 if <statement>
@@ -98,7 +97,7 @@ else
 end
 ```
 
-***for loop***
+## ***for loop***
 
 ```
 for i in vec
@@ -112,7 +111,7 @@ for i in 1:2:10 # to access elements in steps of 2
 end
 ```
 
-***while***
+## ***while***
 
 ```
 while <cond>
@@ -120,7 +119,7 @@ while <cond>
 end
 ```
 
-***functions***
+## ***functions***
 
 ```
 function func_name(<parameters>)
@@ -148,7 +147,7 @@ function sum_two_with_keywords_args(x,y;key1=1,key2=10)
 end
 ```
 
-***anonymous function***
+## ***anonymous function***
 
 same as lambda function, we can define a lambda function in Julia too.
 
@@ -158,7 +157,7 @@ or
 filter(x->x<9, 1:10)
 ``` 
 
-***struct***
+## ***struct***
 
 Structs are pretty simple to define, structs are default immutable, to make it immutable, need to define it as ```mutable struct``` and to define a type for the struct add ```::typ```. If we do not give a type, it will take type as ```any```.
 
@@ -181,7 +180,7 @@ end
 ```
 
 
-***Scraping***
+## ***Scraping***
 
 Scraping in Julia can be done using HTTP, Gumbo and Cascadia
 
