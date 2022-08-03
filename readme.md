@@ -2,6 +2,8 @@ These are basically the stuff I learnt while playing around with the language.
 
 ***starting a repl***
 
+_____________________
+
 cmd+shift+p - julia start repl
 
 ![Pasted image](static/startREPL.png)
@@ -15,6 +17,7 @@ we use the *using* keyword to import libraries in Julia. to run a line, we need 
 
 
 ***packages***
+_____________________
 
 Basic commands are ```add <package-name>, rm <package-name>, status``` to know packages present. To add specific versions of packages, add ```@<version-number>``` after package name.
 
